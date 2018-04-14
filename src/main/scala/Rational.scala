@@ -10,46 +10,46 @@ class Rational(n: Int, d: Int) {
 
   def this(n: Int) = this(n, 1) // auxiliary constructor
 
-  def + (other: Rational): Rational =
+  def + (that: Rational): Rational =
     new Rational(
-      numer * other.denom + other.numer * denom,
-      denom * other.denom
+      numer * that.denom + that.numer * denom,
+      denom * that.denom
     )
 
-  def + (other: Int): Rational =
-    this + new Rational(other)
+  def + (that: Int): Rational =
+    this + new Rational(that)
 
-  def - (other: Rational): Rational =
+  def - (that: Rational): Rational =
     new Rational(
-      numer * other.denom - other.numer * denom,
-      denom * other.denom
+      numer * that.denom - that.numer * denom,
+      denom * that.denom
     )
 
-  def - (other: Int): Rational =
-    this - new Rational(other)
+  def - (that: Int): Rational =
+    this - new Rational(that)
 
-  def * (other: Rational): Rational =
+  def * (that: Rational): Rational =
     new Rational(
-      numer * other.numer,
-      denom * other.denom
+      numer * that.numer,
+      denom * that.denom
     )
 
-  def * (other: Int): Rational =
-    this * new Rational(other)
+  def * (that: Int): Rational =
+    this * new Rational(that)
 
-  def / (other: Rational): Rational =
+  def / (that: Rational): Rational =
     new Rational(
-      numer * other.denom,
-      denom * other.numer
+      numer * that.denom,
+      denom * that.numer
     )
 
-  def / (other: Int): Rational =
-    this / new Rational(other)
+  def / (that: Int): Rational =
+    this / new Rational(that)
 
-  def lessThan(other: Rational) =
-    numer * other.denom < other.numer * denom
+  def lessThan(that: Rational) =
+    numer * that.denom < that.numer * denom
 
-  def moreThan(other: Rational) = !lessThan(other)
+  def moreThan(that: Rational) = !lessThan(that)
 
   override def toString: String = numer + "/" + denom
 
