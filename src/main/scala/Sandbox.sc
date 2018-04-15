@@ -3,6 +3,11 @@ import java.math.BigInteger
 val big = new BigInteger("12345")
 big
 
+if (true) 1 else false
+
+List(1, false, "blah")
+List(1,2,3)
+
 List(1,2,3,2,10,4,3).reduceLeft((a, b) => if (a > b) a else b)
 List(1,2,3,2,10,4,3).reduce((a, b) => if (a > b) a else b)
 List(1,2,3,2,10,4,3).reduce((a, b) => if (a < b) a else b)
