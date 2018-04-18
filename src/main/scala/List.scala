@@ -11,7 +11,7 @@ object ListRunner {
     val c = singleton[Boolean](true)
     val d = singleton(true)
 
-    // object List below allows us to call List in this way
+    // object List with apply methods below allows us to call List in this way
     val e = List
     val f = List(1)
     val g = List(1,2)
