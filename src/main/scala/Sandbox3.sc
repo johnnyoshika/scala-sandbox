@@ -13,5 +13,5 @@ l.foldRight(l)(_ :: _)
 l.foldLeft(l)(_ :+ _)
 
 List(1,2,3).filter(2 >)
-List(1,2,3).filter(< 2)
+//List(1,2,3).filter(< 2)
 
