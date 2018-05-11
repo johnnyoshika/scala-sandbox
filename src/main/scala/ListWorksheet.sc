@@ -8,11 +8,15 @@ List((1, 'A'), (2, 'B'))
 
 // Concatenation
 1 :: 2 :: 3 :: Nil
-1 :: List(2,3)
+1 :: List(2,3)          // prepend first into second
+1 +: List(2, 3)
 List(1,2) :: List(1,2)
+
+List(1,2) ++ List(1,2)  // concatenate (i.e. flatten)
 List(1,2) ::: List(1,2)
-List(1,2) ++ List(1,2)
-List(1,2) :+ 3
+
+List(1,2) :+ 3          // append
+
 
 List(1,2,3) updated (1, 10)
 
